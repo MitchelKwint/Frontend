@@ -1,0 +1,7 @@
+table,tr,td{
+    border: 1px solid #000;
+    
+}
+table{
+    background-image: linear-gradient(to bottom, hsl(0, 80%, 50%), #bada55);
+}

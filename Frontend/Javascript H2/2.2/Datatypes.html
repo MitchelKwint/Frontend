@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Datatypes</title>
+</head>
+
+<body>
+    <script>
+        var naam = "Chris";
+        var adres = "Kruislaan 111";
+        document.write("<br> Opgave10: Datatype van naam:" + typeof naam);
+
+        var leerplichtig = true;
+        var volwassen = false;
+        document.write("<br> Opgave11: Datatype van leerplichtig:" + typeof leerplichtig);
+
+        var temperatuur = 10;
+        document.write("<br> Opgave12: Datatype van temperatuur:" + typeof temperatuur);
+
+        var btw = 0.21 * 100;
+        document.write("<br> Opgave13: Waarde van btw is:" + btw);
+
+        // parse int gebruik je om tekst omtezetten naar integer(cijfers)
+        var string = "33445";
+        var resultaat = parseInt(string);
+        document.write("<br> Opgave14: parseInt(string)" + typeof resultaat);
+
+        // parse float gebruik je om tekst omtezetten naar float(decimalen)
+        var string = "3.3445";
+        var resultaat = parseFloat(string);
+        document.write("<br> Opgave15: parseFloat(string)" + typeof resultaat);
+
+        // parse int gebruik je om float(decimalen) omtezetten naar integer(cijfers)
+        var float = 3.3445;
+        var resultaat = parseInt(float);
+        document.write("<br> Opgave16: parseInt(float)" + typeof resultaat);
+
+        // XXX.toString gebruik je om float(decimalen) of integer(cijfers) omtezetten naar tekst(string)
+        var float = 3.3445;
+        var resultaat = float.toString();
+        document.write("<br> Opgave17: float.toString()" + typeof resultaat);
+
+        //fixed je float of integer met het aantal decimalen die fixed aangeeft.
+        var float = 3.3445;
+        var resultaat = float.toFixed(2);
+        document.write("<br> Opgave18: float.toFixed(2)" + typeof resultaat);
+
+        //Hier kan je kijken of een var een waarde heeft meegekregen
+        var twee; //variabele twee ongedefinieerd.
+        document.write("<br>Opgave19: Datatype var twee is:" + typeof twee);
+        
+        //Hier kan je kijken of een var een waarde van een cijfer heeft meegekregen
+        var een = 1;
+        var drie =  een * twee; //var twee is nog niet aangemaakt.
+        document.write("<br>Opgave20: Datatype var drie is:" + drie);
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+/* max 900px (tablets) */
+@media only screen and (max-width: 900px) {
+    body {
+        max-width: 900px;
+    }
+
+    main {
+        background-color: #97d0Ac;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    #logo {
+        margin-top: 35px;
+        padding-top: 10%;
+        background-size: 50% 50%;
+    }
+
+    #albums {
+        width: 100%;
+        padding-left: 5%;
+        float: left;
+    }
+
+    #albums ul li img {
+        width: 18%;
+        margin-top: 3%;
+        margin-left: 7%;
+        margin-bottom: 5%;
+        float: left;
+    }
+
+    #multimedia {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
+
+/* max 600px (tablets/phones) */
+@media only screen and (max-width: 600px) {
+    body {
+        max-width: 600px;
+    }
+
+    main {
+        background-color: #d4808b;
+    }
+
+    table th {
+        font-size: 0.8rem;
+    }
+
+    table td {
+        font-size: 0.8rem;
+    }
+}
+
+/* max 450px (phones) */
+@media only screen and (max-width: 450px) {
+    body {
+        max-width: 450px;
+    }
+
+    main {
+        background-color: #FF4E00;
+    }
+
+    nav ul li {
+        float: none;
+        width: 100%;
+    }
+}

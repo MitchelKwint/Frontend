@@ -1,0 +1,51 @@
+.border {
+    border-top: 2px solid #a719a7;
+    border-bottom: 2px solid #2d53d1;
+    border-right: 2px solid #2d53d1;
+    border-left: 2px solid #2d53d1;
+    width: 350px;
+}
+
+.rood1 {
+    background-color: rgba(255, 0, 0, 1.0);
+}
+
+.rood2 {
+    background-color: rgba(255, 0, 0, 0.9);
+}
+
+.rood3 {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.rood4 {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+.rood5 {
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.rood6 {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.rood7 {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+.rood8 {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.rood9 {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.rood10 {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.rood11 {
+    background-color: rgba(255, 0, 0, 0, 0);
+}

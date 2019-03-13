@@ -1,0 +1,88 @@
+div{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    opacity: 0.7;
+    text-align: center;
+    font-size: 1.7rem;
+    color: aliceblue;
+}
+
+.verticaal{
+    margin: 30px 20px 0 0;
+    transform: skew(0, -30deg);
+    -mz-transform: skew(0, -30deg);
+    -moz-transform: skew(0, -30deg);
+    -o-transform: skew(0, -30deg);
+    -webkit-transform: skew(0, -30deg);
+}
+
+#een{
+    border-radius: 50%;
+    background-color: #42098e;
+     z-index: 1;
+    position: relative;
+    
+}
+
+#twee{
+    border-radius: 50%;
+    background-color: #dd1a92;
+     z-index: 2;
+     position: relative;
+     bottom: 100px;
+    
+}
+
+#drie{
+    border-radius: 50%;
+    background-color: #0c7e1d;
+    z-index: 3;
+     position: relative;
+     bottom: 200px;
+    
+}
+
+#disc {
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.8;
+    width: 400px;
+    height: 400px;
+    margin-top: 10%;
+
+}
+
+@-webkit-keyframes revolutie {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/* standard */
+@keyframes revolutie {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#disc {
+    -webkit-animation-name: revolutie;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    animation-name: revolutie;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}

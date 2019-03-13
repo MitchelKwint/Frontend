@@ -1,0 +1,232 @@
+<!-- wesbsite RadioGaGa -->
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mitchel">
+    <meta name="robots" content="all">
+    <meta name="description" content="RadioGaGa marketing">
+    <meta name="keywords" content="muziek">
+    <meta name="copyright" content="copyright">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Responsive.css">
+    <title>RadioGaGa</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="playlist.html">Playlist</a></li>
+            <li> <a href="formulier.html">Formulier</a></li>
+            <li> <a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+
+    <main>
+        <div id="albums">
+            <ul>
+                <li>
+                    <a onclick="document.getElementById('album-1').style.display='block'; document.getElementById('album-2').style.display='none'; document.getElementById('album-3').style.display='none';"><img src="album-1.jpg"></a>
+                </li>
+
+                <li>
+                    <a onclick="document.getElementById('album-1').style.display='none'; document.getElementById('album-2').style.display='block'; document.getElementById('album-3').style.display='none';"><img src="album-2.jpg"></a>
+                </li>
+
+                <li>
+                    <a onclick="document.getElementById('album-1').style.display='none'; document.getElementById('album-2').style.display='none'; document.getElementById('album-3').style.display='block';"><img src="album-3.jpg"></a>
+                </li>
+            </ul>
+        </div> <!-- einde albums -->
+
+        <div id="multimedia">
+            <div class="album-1" style="display: block">
+                <video controls width="80%" preload poster="album-1.jpg">
+                    <source src="trailer.wmv" type="video/wmv">
+                    </source>
+                    <source src="trailer.ogv" type="video/ogv">
+                    </source>
+                    <source src="trailer.mp4" type="video/mp4">
+                    </source>
+                </video>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Track</th>
+                            <th>Titel</th>
+                            <th>Tijd</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Titel1</td>
+                            <td>02:08</td>
+                            <td>
+                                <a onclick="document.getElementById('audio').src='2121.mp3';
+                                     v=document.getElementById('audio');
+                                     v.play();">Play</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Titel2</td>
+                            <td>03:18</td>
+                            <td>
+                                <a onclick="document.getElementById('audio').src='Vete De Mi╠ü.m4a';
+                                     v=document.getElementById('audio');
+                                     v.play();">Play</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Titel3</td>
+                            <td>02:08</td>
+                            <td>
+                                <a onclick="document.getElementById('audio').src='Vuelvo Al Sur.m4a';
+                                     v=document.getElementById('audio');
+                                     v.play();">Play</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <audio style="display: block" id="audio" src="2121.mp3" controls></audio>
+                <div>
+                    <!-- einde album-1-->
+                </div>
+
+                <div id="album-2" style="display: none">
+                    <video controls width="80%" preload poster="album-2.jpg">
+                        <source src="trailer.wmv" type="video/wmv">
+                        </source>
+                        <source src="trailer.ogv" type="video/ogv">
+                        </source>
+                        <source src="trailer.mp4" type="video/mp4">
+                        </source>
+                    </video>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Track</th>
+                                <th>Titel</th>
+                                <th>Tijd</th>
+                                <th>Play</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Titel1</td>
+                                <td>02:08</td>
+                                <td>
+                                    <a onclick="document.getElementById('audio').src='2121.mp3';
+                                     v=document.getElementById('audio');
+                                     v.play();">Play</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Titel2</td>
+                                <td>03:18</td>
+                                <td>
+                                    <a onclick="document.getElementById('audio').src='Vete De Mi╠ü.m4a';
+                                     v=document.getElementById('audio');
+                                     v.play();">Play</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Titel3</td>
+                                <td>02:08</td>
+                                <td>
+                                    <a onclick="document.getElementById('audio').src='Vuelvo Al Sur.m4a';
+                                     v=document.getElementById('audio');
+                                     v.play();">Play</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <audio style="display: block" class="audio" src="Vete De Mi╠ü.m4a" controls></audio>
+                </div>
+
+                <div id="album-3" style="display: none">
+                    <video controls width="80%" preload poster="album-3.jpg">
+                        <source src="trailer.wmv" type="video/wmv">
+                        </source>
+                        <source src="trailer.ogv" type="video/ogv">
+                        </source>
+                        <source src="trailer.mp4" type="video/mp4">
+                        </source>
+                    </video>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Track</th>
+                                <th>Titel</th>
+                                <th>Tijd</th>
+                                <th>Play</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Titel1</td>
+                                <td>02:08</td>
+                                <td>
+                                    <a onclick="document.getElementById('audio').src='2121.mp3';
+                                     v=document.getElementById('audio');
+                                     v.play();">Play</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Titel2</td>
+                                <td>03:18</td>
+                                <td>
+                                    <a onclick="document.getElementById('audio').src='Vete De Mi╠ü.m4a';
+                                     v=document.getElementById('audio');
+                                     v.play();">Play</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Titel3</td>
+                                <td>02:08</td>
+                                <td>
+                                    <a onclick="document.getElementById('audio').src='Vuelvo Al Sur.m4a';
+                                     v=document.getElementById('audio');
+                                     v.play();">Play</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <audio style="display: block" src="Vuelvo Al Sur.m4a" controls></audio>
+                </div>
+            </div> <!-- einde album-3 -->
+        </div> <!-- einde multimedia -->
+    </main>
+
+    <div id="pager">
+        <div id="vorige">
+            <a href="index.html">&lt;</a>
+        </div>
+        <div id="volgende">
+            <a href="Formulier.html">&gt;</a>
+        </div>
+    </div>
+    <footer>
+        <a href="#top"><img src="twitter.png" alt="x"></a>
+        <a href="#top"><img src="youtube.png" alt="x"></a>
+        <a href="#top"><img src="facebook.png" alt="x"></a>
+        <p>Copyright &copy; 2019 <i>Ontworpen door: Mitchel </i>Alle rechte voorbehouden</p>
+    </footer>
+</body>
+
+</html>

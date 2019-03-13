@@ -1,0 +1,42 @@
+
+body {
+    background-color: #fff;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.div {
+    margin: 0;
+}
+
+#vierkant {
+    height: 300px;
+    width: 400px;
+    background-color: deepskyblue;
+    opacity: 0.5;
+    position: fixed;
+    box-shadow: 2px 2px 6px #000;
+}
+
+#driehoek {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 200px solid darkorange;
+    opacity: 0.8;
+    position: relative;
+    top: 100px;
+    left: 3%;
+}
+
+#circkel {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: firebrick;
+    box-shadow: 2px 2px 6px #000;
+    position: relative;
+    left: 60%;
+    top: 10%;
+}
