@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Array methodes</title>
+</head>
+
+<body>
+
+    <script>
+        var testarray = new Array('één','twee','3','vier');
+        array = testarray;
+        array[5] = "5"; 
+        document.write(testarray);
+        
+        document.write("<br> Datatype is:" + typeof + testarray);
+        
+        testarray.pop();
+        document.write("<br>" + testarray);
+        
+        testarray.unshift('nul');
+        document.write("<br>" + testarray);
+        
+        testarray.shift();
+        document.write("<br>" + testarray[-1]);
+        
+        document.write("<br>" + testarray);
+        
+        delete testarray[1];
+        document.write("<br>" + testarray);
+        
+         delete testarray[1,3];
+        document.write("<br>" + testarray);
+
+        
+        
+    </script>
+</body>
+
+</html>

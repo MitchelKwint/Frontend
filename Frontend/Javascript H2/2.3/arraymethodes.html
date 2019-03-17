@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Array methodes</title>
+</head>
+
+<body>
+
+    <script>
+        //Opdracht 24
+        var studenten = new Array('Zakaria', 'Albert', 'Hamsa', 'Mike', 'Pieter');
+        document.write("<br> Opgave 24: Studenten:" + studenten);
+
+        //Opdracht 25
+        team = studenten;
+        document.write("<br> Opgave 25: Team:" + team);
+
+        //Opdracht 26
+        team[0] = "Umut";
+        document.write("<br> Opgave26: Element [0] is gewijzigd:" + studenten);
+
+        //Opdracht 27/ Shift verwijders eerste element uit een array
+        studenten.shift();
+        document.write("<br> Opgave 27: Resultaat van shift:" + studenten);
+
+        //Opdrachten 28/ Unshift is elementen toevoegen aan een array aan het begin
+        studenten.unshift('Jozef', 'Umut');
+        document.write("<br> Opgave 28: Resultaat van unshift:" + studenten);
+
+        //Opdracht 29/ Pop verwijderd de laatste element uit een array
+        studenten.pop();
+        document.write("<br> Opgave 29: Resultaat van pop:" + studenten);
+
+        //Opdracht 30/ Push is elementen toevoegen aan een array aan het einde
+        studenten.push('Pieter', 'David');
+        document.write("<br> Opgave 30: Resultaat van push:" + studenten);
+
+        //Opdracht 31/ Splice is het splitsen van een array het eerste getal is waar je begint en het tweede getal is hoeveel je er wilt hebben
+        klas = studenten.splice(2, 4);
+        document.write('<br> Opgave 31: Resultaat: <br> Studenten:' + studenten + '<br> Klas:' + klas);
+
+        //Opdracht 32/ Sort is voor het sorteren op alfabetische volgorde
+        studenten.sort();
+        document.write("<br> Opgave 32: Resultaat van sort:" + studenten);
+
+        //Opdracht 33/ De eerste worde de laaste in het array en andersom
+        studenten.reverse();
+        document.write("<br> Opgave 33: Resultaat van reverse:" + studenten);
+
+        //Opdracht 34/ Index geeft het getal in de array
+        index = studenten.indexOf('Jozef');
+        document.write("<br> Opgave 34: Resultaat van indexof:" + index);
+
+        //Opdracht 35/ Delete is om te verwijderen van een specifieke array
+        delete klas[2];
+        document.write("<br> Opgave 35: Resultaat van delete:" + klas);
+        
+        //Opdracht 36/
+        document.write("<br> Opgave 36: Datatype van gedelete element is:" + klas[2]);
+        
+        //Opdracht 37/
+        klas.splice(2,1);
+        document.write("<br> Opgave 37: Element volledig verwijderd:" + klas);
+        
+        //Opdracht 38/ Specifiek iemand verwijderen uit een array
+        index = studenten.indexOf('Jozef');
+        studenten.splice(index,1);
+        document.write("<br> Opgave 38: Specifieke student verwijderd:" + studenten);
+        
+        //Opdracht 39/ 
+        klas2 = klas.slice();
+          document.write("<br> Opgave 39: Resultaat van kopiëren:" + klas2);
+        
+        //Opdracht 40/ Join voegt tussen elke array element iets toe
+        var myString = klas.join('|');
+          document.write("<br> Opgave 40: Resultaayt van join:" + myString);
+        
+        
+
+    </script>
+</body>
+
+</html>

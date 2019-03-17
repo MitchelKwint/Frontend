@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab05</title>
+</head>
+
+<body>
+
+    <script>
+        //Om een datum te kunnen berekenen moet je de miliseconden sinds 1970 hebben min de datum doen en delen door een dag in miliseconden 86.400.00.
+        var eindatum = prompt("Wat is de einddatum JJJJ-MM-DD?")
+
+        var deadline = new Date(eindatum)
+        
+        var nu = Date.now();
+        
+        var eenDag = 86400000;
+
+        var dagen = ((nu - deadline) / eenDag);
+        
+        document.write("Deadline:" + eindatum + "Je hebt nog dagen:" + dagen.toFixed(0));
+    </script>
+</body>
+
+</html>
