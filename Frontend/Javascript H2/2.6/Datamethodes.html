@@ -9,12 +9,23 @@
 <body>
 
     <script>
-        var maanden = new Array('Januari','Februari','Maart','April','Mei','Juni','Juli','Augustus','September','Oktober','November','December');
-        var weekdag = new Array('Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag', 'Zondag', )
+        var maanden = new Array('Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December');
+        var weekdag = new Array('Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag')
 
+        var nu = new Date();
+        document.write("<br> Vandaag is het:" + nu);
+
+        var dag = weekdag[nu.getDay()];
+        document.write("<br> Vandaag is het:" + dag);
         
-       document.write("<br> Vandaag is:");
-       document.write("<br> Vandaag is:"); 
+        var nummer = nu.getDate();
+        document.write(nummer);
+        
+        var maand = maanden[nu.getMonth()];
+        document.write(maand);
+
+        var jaar = nu.getFullYear();
+        document.write(jaar);
     </script>
 </body>
 
