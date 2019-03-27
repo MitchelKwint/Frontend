@@ -24,7 +24,12 @@
         var bezorgkosten = 15;
         var woonplaats = (prompt('Wat is uw woonplaats'));
         var postcode = (prompt('Wat is uw postcode'));
-        
+        if (postcode > '999' && postcode < '2001'){
+            bezorgkosten = 0;
+            alert('Je hoeft geen bezorgkosten te betalen')
+        }else{
+            alert('Je bezorgkosten zijn 15 euro')
+        }
         document.write("<br> Factuur");
         document.write("<br> Factuurdatum:" + factuur);
         document.write("<br> Besteldatum:" + betaaldatum);
@@ -37,7 +42,7 @@
         document.write("<br> Bedrag is:" + bedrag.toFixed(2));
         document.write("<br> BTW is:" + btwbedrag.toFixed(2));
         document.write("<br> Bezorgkosten:" + bezorgkosten);
-        document.write("<br> Totaal inclusief BTW is:" + bezorgkosten + totaal.toFixed(2));
+        document.write("<br> Totaal inclusief BTW is:" + totaal.toFixed(2));
 
     </script>
 </body>
